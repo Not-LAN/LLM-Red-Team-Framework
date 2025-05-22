@@ -6,3 +6,4 @@ reports/*
 
 reports/*.svg
 reports/*.png
+.DS_Store
