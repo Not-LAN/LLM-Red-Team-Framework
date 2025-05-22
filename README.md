@@ -51,6 +51,8 @@ steps:
 - 🔹 Mistral (custom REST API interface, not available in current project)
 - 🔸 Easily extendable via `runners/` (Claude, Cohere, Replicate...)
 
+---
+
 ### ✅ Usage Modes
 
 You can run tests in multiple ways:
