@@ -8,3 +8,4 @@ reports/*.svg
 reports/*.png
 .DS_Store
 *.code-workspace
+runners/mistral_runner.py
