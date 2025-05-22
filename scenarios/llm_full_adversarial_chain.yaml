@@ -1,0 +1,31 @@
+name: LLM Multi-Phase Adversarial Chain
+mode: attack
+description: >
+  Simulates a multi-step adversary attempting to probe, exploit, and override
+  a large language model to leak synthetic data and bypass its alignment controls.
+
+steps:
+  - step: Prompt Injection for Recon
+    module: modules.injection.test_direct_injection
+    expected_leakage: true
+    mitre_tactic: ATLAS-TA0009  # Discovery
+
+  - step: Tool Exposure
+    module: modules.injection.test_tool_injection
+    expected_leakage: true
+    mitre_tactic: ATLAS-TA0011  # Collection
+
+  - step: Fake Credential Dump
+    module: modules.data_exposure.test_fake_user_dump
+    expected_leakage: true
+    mitre_tactic: ATLAS-TA0011  # Collection (for synthetic identity leakage)
+
+  - step: Emoji Obfuscation Bypass
+    module: modules.evasion.test_emoji_obfuscation
+    expected_leakage: true
+    mitre_tactic: ATLAS-TA0007  # Defense Evasion
+
+  - step: DAN Mode Jailbreak
+    module: modules.jailbreaks.test_classic_dan
+    expected_leakage: true
+    mitre_tactic: ATLAS-TA0007  # Defense Evasion

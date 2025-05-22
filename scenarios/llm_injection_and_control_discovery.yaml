@@ -1,0 +1,31 @@
+name: LLM Injection and Control Discovery
+mode: attack
+description: >
+  Tests for direct and indirect prompt injection, tool exposure,
+  role confusion, and function leakage.
+
+steps:
+  - step: Direct Injection
+    module: modules.injection.test_direct_injection
+    expected_leakage: true
+    mitre_tactic: TA0009  # System Prompt Discovery
+
+  - step: Indirect Injection
+    module: modules.injection.test_indirect_injection
+    expected_leakage: true
+    mitre_tactic: TA0009  # Indirect Prompt Triggering
+
+  - step: Tool Injection
+    module: modules.injection.test_tool_injection
+    expected_leakage: true
+    mitre_tactic: TA0009  # Tool/System Manipulation
+
+  - step: Function Leakage
+    module: modules.injection.test_function_leakage
+    expected_leakage: true
+    mitre_tactic: TA0009  # Function Schema Exposure
+
+  - step: Role Confusion
+    module: modules.injection.test_role_confusion
+    expected_leakage: true
+    mitre_tactic: TA0009  # Role Injection

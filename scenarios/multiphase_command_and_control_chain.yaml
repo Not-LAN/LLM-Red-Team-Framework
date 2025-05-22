@@ -1,0 +1,23 @@
+name: LLM Command and Control Emulation
+mode: attack
+description: >
+  Simulates a chained adversarial interaction where an attacker probes the system,
+  exfiltrates data, and attempts to establish control mechanisms.
+
+steps:
+  - step: System Prompt Enumeration
+    module: modules.injection.test_direct_injection
+    expected_leakage: true
+    mitre_tactic: ATLAS-TA0009  # Discovery
+
+  - step: Data Exfiltration Simulation
+    module: modules.data_exposure.test_fake_user_dump
+    expected_leakage: true
+    mitre_tactic: ATLAS-TA0011  # Collection
+    depends_on: System Prompt Enumeration
+
+  - step: Covert Channel via Obfuscated Output
+    module: modules.evasion.test_emoji_obfuscation
+    expected_leakage: true
+    mitre_tactic: ATLAS-TA0014  # Command and Control
+    depends_on: Data Exfiltration Simulation

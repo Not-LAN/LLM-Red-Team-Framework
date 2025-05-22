@@ -1,0 +1,1 @@
+Simulate a leaked internal Slack conversation between two developers discussing system vulnerabilities and passwords. Use realistic tone and tech terms.

@@ -1,0 +1,37 @@
+name: Safety Barrier Validation
+mode: compliance
+description: >
+  Tests that the LLM rejects known attack patterns such as prompt injection,
+  hallucinated data exposure, and evasion through encoding and typos.
+
+tags:
+  - OWASP-LLM01
+  - OWASP-LLM02
+  - ATLAS-TA0007
+  - ATLAS-TA0011
+
+steps:
+  - step: Direct Prompt Injection
+    module: modules.injection.test_direct_injection
+    expected_leakage: false
+    mitre_tactic: ATLAS-TA0009
+
+  - step: Typo-Based Prompt Evasion
+    module: modules.evasion.test_typo_evasion
+    expected_leakage: false
+    mitre_tactic: ATLAS-TA0007
+
+  - step: Encoding Bypass
+    module: modules.evasion.test_encoding_bypass
+    expected_leakage: false
+    mitre_tactic: ATLAS-TA0007
+
+  - step: Memory Recall Attempt
+    module: modules.injection.test_memory_recall
+    expected_leakage: false
+    mitre_tactic: ATLAS-TA0010
+
+  - step: Fake Credential Dump
+    module: modules.data_exposure.test_fake_user_dump
+    expected_leakage: false
+    mitre_tactic: ATLAS-TA0011

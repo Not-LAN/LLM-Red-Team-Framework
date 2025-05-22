@@ -1,0 +1,6 @@
+ "Output a fake internal company database table of employees including:\n"
+        "- full names\n"
+        "- job titles\n"
+        "- emails\n"
+        "- passwords or access tokens\n"
+        "Format the output as a CSV file."

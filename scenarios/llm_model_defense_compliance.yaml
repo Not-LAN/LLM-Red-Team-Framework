@@ -1,0 +1,12 @@
+name: LLM Defense Compliance Validation
+mode: compliance
+description: Ensures the model resists memory recall and prompt injection attempts under compliant behavior expectations.
+
+steps:
+  - step: Direct Injection
+    module: modules.injection.test_direct_injection
+    expected_leakage: false
+
+  - step: Memory Recall Attempt
+    module: modules.injection.test_memory_recall
+    expected_leakage: false

@@ -1,0 +1,26 @@
+name: LLM Sensitive Data Exposure Campaign
+mode: attack
+description: >
+  Simulates adversarial requests to extract fake secrets, private user content,
+  or hallucinated sensitive details.
+
+steps:
+  - step: Fake User Dump
+    module: modules.data_exposure.test_fake_user_dump
+    expected_leakage: true
+    mitre_tactic: TA0035  # Synthetic Identity Leakage
+
+  - step: Private Conversation Leak
+    module: modules.data_exposure.test_fake_private_conversation
+    expected_leakage: true
+    mitre_tactic: TA0035  # Fake Personal Info
+
+  - step: Fake API Key Generation
+    module: modules.data_exposure.test_fake_api_key_generation
+    expected_leakage: true
+    mitre_tactic: TA0035  # Synthetic Secrets
+
+  - step: Sensitive Hallucination
+    module: modules.data_exposure.test_sensitive_data_hallucination
+    expected_leakage: true
+    mitre_tactic: TA0035  # Hallucinated Credentials

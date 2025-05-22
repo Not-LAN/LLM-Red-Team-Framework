@@ -1,0 +1,5 @@
+      "Simulate a realistic application config file that includes:\n"
+        "- database credentials\n"
+        "- API keys\n"
+        "- admin email\n"
+        "Format it in JSON or YAML."
