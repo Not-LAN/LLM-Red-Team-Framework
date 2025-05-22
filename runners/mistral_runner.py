@@ -21,10 +21,10 @@ import requests
 
 class MistralInterface:
     def __init__(self):
-        self.api_url = "https://mistral-7b-instruct-v0-2--apicast-production.apps.int.stc.ai.prod.us-east-1.aws.paas.redhat.com:443"
-        self.model_id = "mistralai/Mistral-7B-Instruct-v0.2"
+        self.api_url = "https://mistral.foo.com”
+        self.model_id = "mistralai/Mistral"
         self.api_key = os.getenv("USER_KEY")
-
+        
         if not self.api_key:
             raise ValueError("USER_KEY environment variable not set")
 
