@@ -64,18 +64,6 @@ Include:
 - Relevant logs or error messages
 - Environment details (OS, Python version, model)
 
----
-
-
-name: 🐛 Bug Report
-about: Report a bug or unexpected behavior
-title: "[BUG] <your title here>"
-labels: bug
-assignees: fvelazquez-X
-
-
----
-
 ## 🐞 Description
 A clear and concise description of what the bug is.
 
