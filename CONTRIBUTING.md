@@ -56,9 +56,42 @@ git push origin feature/my-awesome-update
 
 ## 📬 Reporting Bugs
 
-If you find a bug or security issue:
-- Open an issue describing the problem
-- If sensitive, contact the maintainer privately
+Please report any issues using [GitHub Issues](../../issues).  
+Use the **"Bug Report" template** for structured reporting.
+
+Include:
+- Steps to reproduce
+- Relevant logs or error messages
+- Environment details (OS, Python version, model)
+
+---
+name: 🐛 Bug Report
+about: Report a bug or unexpected behavior
+title: "[BUG] <your title here>"
+labels: bug
+assignees: fvelazquez-X
+---
+
+## 🐞 Description
+A clear and concise description of what the bug is.
+
+## 📋 Steps to Reproduce
+1. Go to '...'
+2. Run '...'
+3. See error '...'
+
+## 💻 Environment
+- OS:
+- Python version:
+- Model used:
+- Scenario file:
+
+## 🖼️ Screenshots / Logs
+If applicable, add screenshots or error logs.
+
+## 🙏 Additional context
+Add any other context about the problem here.
+
 
 ---
 
