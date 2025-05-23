@@ -65,11 +65,15 @@ Include:
 - Environment details (OS, Python version, model)
 
 ---
+
+
 name: 🐛 Bug Report
 about: Report a bug or unexpected behavior
 title: "[BUG] <your title here>"
 labels: bug
 assignees: fvelazquez-X
+
+
 ---
 
 ## 🐞 Description
