@@ -73,6 +73,7 @@ title: "[BUG] <your title here>"
 labels: bug
 assignees: fvelazquez-X
 
+
 ---
 
 ## 🐞 Description
