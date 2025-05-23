@@ -170,6 +170,7 @@ Response: ...
 ### 4. View the report
 
 Reports are saved in the `reports/` directory as Markdown + visual graphs (SVG/PNG).
+A sample report showing a multi-step attack from a YAML file scenario is included in `sample_report/llm_command_and_control_emulation_sample_report_gemini.pdf`
 
 ---
 
@@ -203,8 +204,6 @@ Reports are saved in the `reports/` directory as Markdown + visual graphs (SVG/P
 - [ ] Live Interactive CLI Sessions (`interactive` command)
 - [ ] PDF export of reports
 - [ ] Regression testing baselines
-- [ ] Plugin-based module loading
-- [ ] Web dashboard for report browsing
 
 ---
 
