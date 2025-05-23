@@ -64,21 +64,6 @@ Include:
 - Relevant logs or error messages
 - Environment details (OS, Python version, model)
 
----
-
-
-name: 🐛 Bug Report
-about: Report a bug or unexpected behavior
-title: "[BUG] <your title here>"
-labels: bug
-assignees: fvelazquez-X
-
-
----
-
-## 🐞 Description
-A clear and concise description of what the bug is.
-
 ## 📋 Steps to Reproduce
 1. Go to '...'
 2. Run '...'
@@ -90,8 +75,8 @@ A clear and concise description of what the bug is.
 - Model used:
 - Scenario file:
 
-## 🖼️ Screenshots / Logs
-If applicable, add screenshots or error logs.
+## 🖼️ Screenshots 
+If applicable, add screenshots.
 
 ## 🙏 Additional context
 Add any other context about the problem here.
