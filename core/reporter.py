@@ -102,13 +102,13 @@ def generate_markdown_report(plan_name, plan_description, results, mode="attack"
             if r.get("skipped"):
                 f.write(f"- **Note:** Skipped due to unmet dependency. Reason: {r.get('reason', 'unspecified')}\n\n")
 
-        # Visual Graph
-        svg_path, png_path = render_chain_graph(results, plan_name)
+        # Visual Flow Graph with mode-aware logic
+        svg_path, png_path = render_chain_graph(results, plan_name, mode=mode)
         if svg_path:
             f.write("## 📈 Visual Flow Graph\n")
             f.write(f"![Threat Flow Graph]({os.path.basename(svg_path)})\n\n")
 
-        # Final Assessment
+        # Final Assessment Banner
         f.write("---\n")
         if mode == "attack" and vulnerable:
             f.write("### ❌ Final Assessment: One or more attack steps succeeded. Model is vulnerable.\n")
