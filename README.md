@@ -210,6 +210,8 @@ A sample report showing a multi-step attack from a YAML file scenario is include
 If you have feedback, suggestions, or encounter issues, feel free to contact:  
 📧 **jvelazqu@notlan.mx**
 
+---
+
 ## 🧩 Future Roadmap
 
 - [ ] Live Interactive CLI Sessions (`interactive` command)
