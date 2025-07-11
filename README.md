@@ -229,3 +229,9 @@ Pull requests welcome! If you have new modules, integrations, or feedback — op
 ## ⚖️ License
 
 MIT License © 2025 José Fernando Velázquez Hernández
+
+---
+
+🔒 Built by [NotLAN](https://notlan.mx) – Offensive Security as a Service.  
+We help organizations strengthen their defenses through continuous pentesting, AI remediation, and advanced adversarial simulations.
+
